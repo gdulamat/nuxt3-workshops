@@ -10,6 +10,15 @@ export default defineNuxtConfig({
       baseUrl: 'https://pwa-demo.ddev.site/api'
     }
   },
+  components: {
+    dirs: [
+      {
+        path: '@/components/T3',
+        global: true,
+        pathPrefix: false
+      }
+    ]
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
