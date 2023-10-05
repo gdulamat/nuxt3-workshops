@@ -5,7 +5,8 @@
 </template>
 
 <script setup>
-const { frontendLayout, backendLayout, pageData } = await useT3Page()
+const { frontendLayout, backendLayout, pageData, headData } = await useT3Page()
+useHead(headData)
 definePageMeta({
   layout: false
 })

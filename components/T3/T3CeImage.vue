@@ -16,4 +16,14 @@ const imageData = computed(() => {
   } 
 })
 
+useHead({
+  link: [
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: imageData.value.src
+    }
+  ]
+})
+
 </script>
